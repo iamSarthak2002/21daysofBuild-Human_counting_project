@@ -2,6 +2,7 @@ import cv2
 import imutils
 import numpy as np
 import argparse
+import matplotlib.pyplot as plt
 
 def detect(frame):
     bounding_box_cordinates, weights =  HOGCV.detectMultiScale(frame, winStride = (4, 4), padding = (8, 8), scale = 1.03)
